@@ -28,5 +28,7 @@ AwesomeSpace is a mobile application that allows users to explore exoplanets thr
 ## Demo
 https://youtube.com/shorts/MN4LbYQyUkA?si=DVQ35igZqsc9iul5
 
+## Get the Android app Repository
+https://github.com/Betselot-GA/AwesomeSpace-AndroidApp
 
 
