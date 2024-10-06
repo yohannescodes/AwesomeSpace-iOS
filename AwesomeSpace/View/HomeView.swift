@@ -14,6 +14,7 @@ import CoreLocation
 class HomeView: ARView {
     let motionManager = CMMotionManager()
     let locationManager = CLLocationManager()
+    var detail: Detail?
     
     var latitude = 0.0
     
@@ -30,6 +31,7 @@ class HomeView: ARView {
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.isHidden = true
+        label.isUserInteractionEnabled = true
         return label
     }()
     
@@ -60,6 +62,8 @@ class HomeView: ARView {
         locationManager.requestWhenInUseAuthorization()
         
         locationManager.startUpdatingLocation()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapExoplanet))
+        exoplanetNameLabel.addGestureRecognizer(tap)
         addSubview(exoplanetNameLabel)
         addSubview(habitablityFactorsLabel)
         scanBtn.addTarget(self, action: #selector(didTapScan), for: .touchUpInside)
@@ -166,6 +170,8 @@ class HomeView: ARView {
                 
                 let color = UIColor(red: exoplanetColor.r, green: exoplanetColor.g, blue: exoplanetColor.b, alpha: 1)
                 
+                detail = Detail(distanceFromEarth: response.data.exoplanet.distanceFromEarth, orbitalPeriod: response.data.exoplanet.orbitalPeriod, radius: response.data.exoplanet.radius, mass: response.data.exoplanet.mass, starType: response.data.exoplanet.starType)
+                
                 loadExoplanet(color: color)
                 exoplanetNameLabel.text = exoplanet
                 habitablityFactorsLabel.text = factor
@@ -202,6 +208,19 @@ class HomeView: ARView {
         
         let scannedSpace = ScannedSpace(latitude: latitude, longitude: longitude, azimuth: azimuthDegrees, altitude: altitude)
         fetchExoplanet(scannedSpace: scannedSpace)
+    }
+    
+    @objc private func didTapExoplanet(){
+        
+        if let detail {
+            let alert = UIAlertController(title: exoplanetNameLabel.text, message: "With an orbital period of \(detail.orbitalPeriod) and \(detail.distanceFromEarth) far from us, the \(detail.starType) exoplanet weighs \(detail.mass) and has a radius of \(detail.radius).", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(alertAction)
+            
+            DispatchQueue.main.async {
+                self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+            }
+        }
     }
 }
 

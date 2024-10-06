@@ -47,3 +47,12 @@ struct Color: Codable {
     let g: Double
     let b: Double
 }
+
+
+struct Detail {
+    let distanceFromEarth: String
+    let orbitalPeriod: String
+    let radius: String
+    let mass: String
+    let starType: String
+}
