@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0013DF2CB1BDA10060E273 /* ScannedSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0013DE2CB1BDA10060E273 /* ScannedSpace.swift */; };
+		8E0013E12CB1C2140060E273 /* ExoplanetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0013E02CB1C2140060E273 /* ExoplanetResponse.swift */; };
+		8E0013E32CB1C24F0060E273 /* AwesomeSpaceNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0013E22CB1C24F0060E273 /* AwesomeSpaceNetworkManager.swift */; };
+		8E8B46A22CB2628700B638A7 /* AwesomeSpaceNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B46A12CB2628700B638A7 /* AwesomeSpaceNetworkError.swift */; };
 		8EB0A2BD2CA9878200DE5A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0A2BC2CA9878200DE5A80 /* AppDelegate.swift */; };
 		8EB0A2BF2CA9878200DE5A80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0A2BE2CA9878200DE5A80 /* SceneDelegate.swift */; };
-		8EB0A2C12CA9878200DE5A80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0A2C02CA9878200DE5A80 /* ViewController.swift */; };
-		8EB0A2C42CA9878200DE5A80 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8EB0A2C32CA9878200DE5A80 /* Base */; };
 		8EB0A2C62CA9878300DE5A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB0A2C52CA9878300DE5A80 /* Assets.xcassets */; };
 		8EB0A2C92CA9878300DE5A80 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8EB0A2C82CA9878300DE5A80 /* Base */; };
+		8EB0A2D12CA98C4C00DE5A80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0A2D02CA98C4C00DE5A80 /* HomeViewController.swift */; };
+		8EB0A2D52CA993E100DE5A80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0A2D42CA993E100DE5A80 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E0013DE2CB1BDA10060E273 /* ScannedSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedSpace.swift; sourceTree = "<group>"; };
+		8E0013E02CB1C2140060E273 /* ExoplanetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetResponse.swift; sourceTree = "<group>"; };
+		8E0013E22CB1C24F0060E273 /* AwesomeSpaceNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeSpaceNetworkManager.swift; sourceTree = "<group>"; };
+		8E8B46A12CB2628700B638A7 /* AwesomeSpaceNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeSpaceNetworkError.swift; sourceTree = "<group>"; };
 		8EB0A2B92CA9878200DE5A80 /* AwesomeSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB0A2BC2CA9878200DE5A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB0A2BE2CA9878200DE5A80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EB0A2C02CA9878200DE5A80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8EB0A2C32CA9878200DE5A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EB0A2C52CA9878300DE5A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB0A2C82CA9878300DE5A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB0A2CA2CA9878300DE5A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB0A2D02CA98C4C00DE5A80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8EB0A2D42CA993E100DE5A80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E8B46A32CB263CD00B638A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B46A12CB2628700B638A7 /* AwesomeSpaceNetworkError.swift */,
+				8E0013E22CB1C24F0060E273 /* AwesomeSpaceNetworkManager.swift */,
+				8E0013DE2CB1BDA10060E273 /* ScannedSpace.swift */,
+				8E0013E02CB1C2140060E273 /* ExoplanetResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E8B46A42CB263E100B638A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EB0A2D42CA993E100DE5A80 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E8B46A52CB263EB00B638A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB0A2D02CA98C4C00DE5A80 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8EB0A2B02CA9878100DE5A80 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +91,11 @@
 		8EB0A2BB2CA9878200DE5A80 /* AwesomeSpace */ = {
 			isa = PBXGroup;
 			children = (
+				8E8B46A32CB263CD00B638A7 /* Model */,
+				8E8B46A42CB263E100B638A7 /* View */,
+				8E8B46A52CB263EB00B638A7 /* Controller */,
 				8EB0A2BC2CA9878200DE5A80 /* AppDelegate.swift */,
 				8EB0A2BE2CA9878200DE5A80 /* SceneDelegate.swift */,
-				8EB0A2C02CA9878200DE5A80 /* ViewController.swift */,
-				8EB0A2C22CA9878200DE5A80 /* Main.storyboard */,
 				8EB0A2C52CA9878300DE5A80 /* Assets.xcassets */,
 				8EB0A2C72CA9878300DE5A80 /* LaunchScreen.storyboard */,
 				8EB0A2CA2CA9878300DE5A80 /* Info.plist */,
@@ -127,7 +163,6 @@
 			files = (
 				8EB0A2C62CA9878300DE5A80 /* Assets.xcassets in Resources */,
 				8EB0A2C92CA9878300DE5A80 /* Base in Resources */,
-				8EB0A2C42CA9878200DE5A80 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +173,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB0A2C12CA9878200DE5A80 /* ViewController.swift in Sources */,
 				8EB0A2BD2CA9878200DE5A80 /* AppDelegate.swift in Sources */,
+				8E0013E12CB1C2140060E273 /* ExoplanetResponse.swift in Sources */,
 				8EB0A2BF2CA9878200DE5A80 /* SceneDelegate.swift in Sources */,
+				8EB0A2D52CA993E100DE5A80 /* HomeView.swift in Sources */,
+				8E0013E32CB1C24F0060E273 /* AwesomeSpaceNetworkManager.swift in Sources */,
+				8E0013DF2CB1BDA10060E273 /* ScannedSpace.swift in Sources */,
+				8E8B46A22CB2628700B638A7 /* AwesomeSpaceNetworkError.swift in Sources */,
+				8EB0A2D12CA98C4C00DE5A80 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8EB0A2C22CA9878200DE5A80 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EB0A2C32CA9878200DE5A80 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8EB0A2C72CA9878300DE5A80 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,11 +327,16 @@
 				DEVELOPMENT_TEAM = CSAYGBB43N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AwesomeSpace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AwesomeSpace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AwesomeSpace wants to use your camera for interactive visualization.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AwesomeSpace wants to access your location for a precise visualization.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,11 +360,16 @@
 				DEVELOPMENT_TEAM = CSAYGBB43N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AwesomeSpace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AwesomeSpace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AwesomeSpace wants to use your camera for interactive visualization.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AwesomeSpace wants to access your location for a precise visualization.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
