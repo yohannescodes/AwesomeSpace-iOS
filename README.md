@@ -17,7 +17,7 @@ AwesomeSpace is a mobile application that allows users to explore exoplanets thr
 ## Technologies Used
 - Xcode
 - Swift
-- ARKit, CoreLocation, CoreMotion
+- UIKit, ARKit, RealityKit, CoreMotion, CoreLocation
 - URLSession for API calls
 
 ## Installation
